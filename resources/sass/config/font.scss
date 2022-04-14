@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap");
+
+@import "~slick-carousel/slick/slick.css";
+
+* {
+    font-family: $app-font-primary;
+}
+
+body {
+    background-color: #f7f9fa;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

@@ -1,11 +1,14 @@
-@extends('index')
+@extends('clientes.layout.index')
 @section('title', 'Blank')
 
 @section('content')
 
 <section class="">
-  <h1>Blank Page</h1>
+  <h1>{{$titulo}}</h1>
   <a href="{{route('clientes.create')}}">Novo Cliente</a>
+
+  @if(count($clientes) > 0)
+
   <ul>
     @foreach($clientes as $c)
     <li>{{$c["id"]}}: {{$c["nome"]}}
@@ -20,6 +23,20 @@
     </li><br>
     @endforeach
   </ul>
+
+  <hr>
+
+  @for($i=0; $i < 10; $i++) {{$i}} @endfor <br>
+
+
+
+
+    @else
+    <h3>Não exitem clientes cadastrados!</h3>
+
+    @endif
+
+
 
 
 </section>

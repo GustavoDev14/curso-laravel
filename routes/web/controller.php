@@ -8,7 +8,15 @@ use Illuminate\Http\Request;
 Route::get('/', [MeuControlador::class, 'home'])->name('home');
 Route::get('/nome', [MeuControlador::class, 'nome'])->name('nome');
 Route::get('/idade', [MeuControlador::class, 'idade'])->name('idade');
-Route::get('/produtos', [MeuControlador::class, 'idade'])->name('idade');
+//Route::get('/produtos', [MeuControlador::class, 'idade'])->name('idade');
 Route::get('/multiplicar/{n1?}/{n2?}', [MeuControlador::class, 'multiplicar'])->name('multiplicar');
 
 Route::resource("clientes", ClienteControlador::class);
+
+Route::get('/produtos', function () {
+  return view("clientes.produtos");
+})->name('clientes.produtos');
+
+Route::get('/departamentos', function () {
+  return view("clientes.departamentos");
+})->name('clientes.departamentos');

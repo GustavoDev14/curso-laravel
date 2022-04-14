@@ -1,0 +1,65 @@
+$gray: #E5E5E5;
+$dark: #72777A;
+$black: #090a0a;
+$blue: #386bee;
+$blueClean: #5581F3;
+$white: #ffffff;
+
+// Fonts
+$app-font-primary: "Inter", sans-serif;
+// $font-secondary: 'Eastman Condensed Trial',sans-serif;
+$font-size-root: 1em;
+$font-size-base: 1rem;
+
+// Media query breakpoints
+$breakpoints: (
+    xs: 480px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px,
+    xl: 1440px
+);
+
+.main {
+    margin: 32px 0;
+}
+
+.bg-gray {
+    background-color: $gray;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-blueClean {
+    background-color: $blueClean;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-dark {
+    background-color: $dark;
+}
+
+.text-gray {
+    color: $gray;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-blueClean {
+    color: $blueClean;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-dark {
+    color: $dark;
+}

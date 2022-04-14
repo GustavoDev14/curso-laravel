@@ -31,10 +31,16 @@ class ClienteControlador extends Controller
      */
     public function index()
     {
-
-
         $clientes =  session("clientes");
-        return view("clientes.index", compact(["clientes"]));
+        $titulo = "Todos os Clientes";
+
+        /*Maneiras de passar valores para as views*/
+
+        return view("clientes.index", compact(["clientes", "titulo"]));
+
+        // return view("clientes.index", ["clientes" => $clientes, "titulo" => $titulo]);
+
+        //return view("clientes.index")->with("clientes", $clientes)->with("titulo", $titulo);
     }
 
     /**
